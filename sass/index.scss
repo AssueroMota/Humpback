@@ -1,0 +1,199 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+    overflow-x: hidden;
+}
+.header-main {
+  display: flex;
+  flex-direction: column;
+  flex-shrink: 0;
+
+  .header {
+    position: fixed;
+    padding: 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: -webkit-fill-available;
+    height: 80px;
+    flex-shrink: 0;
+    background: rgba(25, 61, 120, 0.4);
+    backdrop-filter: blur(50px);
+    z-index: 1;
+    overflow-x: hidden;
+    .menu-button {
+      display: none;
+      @media (max-width: 1024px) {
+        display: block;
+        margin-left: 1rem;
+      }
+    }
+    .nav-links {
+      gap: 2rem;
+      .LinksHeader {
+        position: relative;
+        color: #fff;
+        font-family: Lexend Exa;
+        font-size: 15px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 110%; /* 14.3px */
+        letter-spacing: -0.65px;
+        cursor: pointer;
+        text-decoration: none;
+        transition: all ease-in-out 0.4s;
+
+        &:hover {
+          color: #c0c0c0;
+          text-decoration: underline;
+        }
+      }
+    }
+
+    // Select
+    .header-container-2 {
+      display: flex;
+      align-items: center;
+      gap: 2rem;
+
+      .header-select-img {
+        display: flex;
+        .header-flag {
+          border-radius: 18px;
+          background: rgba(232, 232, 232, 0.2);
+          display: inline-flex;
+          padding: 0.5rem;
+          justify-content: center;
+          align-items: center;
+          flex-shrink: 0;
+          max-width: 132px;
+
+          .header-selected-country {
+            img {
+              width: 28.571px;
+              height: 20px;
+              flex-shrink: 0;
+            }
+          }
+        }
+        .header-selected {
+          padding: 10px;
+          border-radius: 4px;
+          border: transparent;
+          font-size: 13px;
+          background-color: transparent;
+          outline: none;
+          width: auto;
+          font-family: Lexend Exa;
+          color: #fff;
+
+          .header-code {
+            color: #fff;
+            font-family: Lexend Exa;
+            font-size: 13px;
+            font-style: normal;
+            font-weight: 600;
+            line-height: 110%; /* 14.3px */
+            letter-spacing: -0.65px;
+            background-color: #4a73ad;
+            &:hover {
+              cursor: pointer;
+            }
+          }
+        }
+      }
+      .menu-button-contact {
+        display: inline-flex;
+        height: 50px;
+        padding: 16px;
+        justify-content: center;
+        align-items: center;
+        flex-shrink: 0;
+        border-radius: 18px;
+        border: transparent;
+        background: #193d78;
+        color: #fff;
+        font-family: Lexend Exa;
+        font-size: 13px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: 110%; /* 14.3px */
+        letter-spacing: -0.65px;
+
+        cursor: pointer;
+        transition: all 0.3s ease-in-out;
+
+        &:hover {
+          background: #4a73ad;
+        }
+        @media (max-width: 1024px) {
+          display: none;
+        }
+      }
+    }
+    nav {
+      display: flex;
+      justify-content: flex-end;
+      gap: 1rem;
+      font-size: 1.2rem;
+      @media (max-width: 1024px) {
+        display: none;
+      }
+      a {
+        color: white;
+        text-decoration: none;
+        &:hover {
+          text-decoration: underline;
+        }
+      }
+    }
+  }
+}
+
+.sidebar {
+  position: fixed;
+  top: 0;
+  right: -300px;
+  width: 250px;
+  height: 100%;
+  background-color: #333;
+  color: #fff;
+  transition: right 0.3s ease;
+  display: inline-flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 64px;
+  background: #193d78;
+  z-index: 2;
+
+  .close-button {
+    margin-top: 20px;
+    width: 40px;
+    height: 40px;
+  }
+
+  .sidebar-options {
+    display: flex;
+    flex-direction: column;
+
+    .LinksSideBar {
+      color: #fff;
+      font-family: Lexend Exa;
+      font-size: 1rem;
+      font-style: normal;
+      font-weight: 500;
+      line-height: 110%; /* 17.6px */
+      letter-spacing: -0.8px;
+      margin-bottom: 32px;
+      margin-right: 1rem;
+      text-align: end;
+      text-decoration: none;
+    }
+  }
+}
+
+.sidebar.open {
+  right: 0;
+}

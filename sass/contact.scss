@@ -1,0 +1,366 @@
+.Contact-container {
+    margin-top: 4rem;
+    background: #fff;
+    max-width: 100%;
+    @media (min-width: 1024px) {
+        max-width: 1400px;
+        margin: auto;
+    }
+    .Contact-container-2 {
+        @media (min-width: 1024px) {
+            width: 80%;
+            margin: auto;
+        }
+        .Contact-container-title {
+            text-align: center;
+            margin: 0rem 1rem 0rem 1rem;
+            height: 184px;
+            width: auto;
+            @media (min-width: 1024px) {
+                width: 750px;
+                margin: auto;
+            }
+            .Contact-title {
+                color: #100f10;
+                text-align: center;
+                font-family: Lexend Exa;
+                font-size: 32px;
+                font-style: normal;
+                font-weight: 700;
+                line-height: 110%; /* 35.2px */
+                letter-spacing: -1.6px;
+                @media (min-width: 1024px) {
+                    color: #100f10;
+                    text-align: center;
+                    font-family: Lexend Exa;
+                    font-size: 48px;
+                    font-style: normal;
+                    font-weight: 700;
+                    line-height: 110%; /* 52.8px */
+                    letter-spacing: -2.4px;
+                }
+            }
+            .Contact-span {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                color: #21a0a0;
+                font-family: Pecita;
+                font-size: 40px;
+                font-style: normal;
+                font-weight: 400;
+                line-height: 110%;
+                @media (min-width: 1024px) {
+                    color: #21a0a0;
+                    font-family: Pecita;
+                    font-size: 64px;
+                    font-style: normal;
+                    font-weight: 400;
+                    line-height: 110%;
+                    margin-top: 6px;
+                    margin-bottom: 6px;
+                }
+            }
+        }
+        .Contact-Form {
+            :focus {
+                outline: none;
+            }
+            margin-left: 1rem;
+            margin-right: 1rem;
+            margin-top: 4rem;
+            @media (min-width: 1024px) {
+                margin: auto;
+                margin-bottom: 8rem;
+            }
+            .Contact {
+                @media (min-width: 1024px) {
+                    display: flex;
+                    justify-content: center;
+                    gap: 32px;
+                    margin: auto;
+                    width: auto;
+                }
+                .Contact-Name {
+                    .Contact-Label-Name {
+                        color: #100f10;
+                        font-family: Lexend Exa;
+                        font-size: 14px;
+                        font-style: normal;
+                        font-weight: 500;
+                        line-height: 175%; /* 24.5px */
+                        letter-spacing: -0.7px;
+                    }
+                    .Contact-Input-Name {
+                        display: flex;
+                        padding: 16px 24px;
+                        align-items: center;
+                        gap: 10px;
+                        flex-shrink: 0;
+                        margin-top: 1rem;
+                        margin-bottom: 1rem;
+                        border-radius: 15px;
+                        background: rgba(33, 160, 160, 0.01);
+                        width: 85%;
+                        border-width: 0 2px 2px 2px;
+                        border-bottom: 2px solid #21a0a0;
+                        border-color: transparent transparent #21a0a0 transparent;
+                        font-family: Lexend Exa;
+                        &::placeholder{
+                            font-family: Lexend Exa;
+                        }
+                        @media (min-width: 1024px) {
+                            display: flex;
+                            width: 440px;
+                            padding: 16px 24px;
+                            align-items: center;
+                            gap: 10px;
+                            flex-shrink: 0;
+                        }
+                    }
+                }
+                .Contact-Email {
+                    .Contact-Label-Email {
+                        color: #100f10;
+                        font-family: Lexend Exa;
+                        font-size: 14px;
+                        font-style: normal;
+                        font-weight: 500;
+                        line-height: 175%; /* 24.5px */
+                        letter-spacing: -0.7px;
+                    }
+                    .Contact-Input-Email {
+                        display: flex;
+                        width: 85%;
+                        padding: 16px 24px;
+                        align-items: center;
+                        gap: 10px;
+                        flex-shrink: 0;
+                        margin-top: 1rem;
+                        margin-bottom: 1rem;
+                        border-radius: 15px;
+                        border-bottom: 2px solid #21a0a0;
+                        background: rgba(33, 160, 160, 0.04);
+                        border-width: 0 2px 2px 2px;
+                        border-color: transparent transparent #21a0a0 transparent;
+                        font-family: Lexend Exa;
+                        &::placeholder{
+                            font-family: Lexend Exa;
+                        }
+                        @media (min-width: 1024px) {
+                            display: flex;
+                            width: 440px;
+                            padding: 16px 24px;
+                            align-items: center;
+                            gap: 10px;
+                            flex-shrink: 0;
+                        }
+                    }
+                }
+                .Contact-tel {
+                    .Contact-Label-Tel {
+                        color: #100f10;
+                        font-family: Lexend Exa;
+                        font-size: 14px;
+                        font-style: normal;
+                        font-weight: 500;
+                        line-height: 175%; /* 24.5px */
+                        letter-spacing: -0.7px;
+                    }
+                    .Contact-Input-Tel {
+                        display: flex;
+                        padding: 16px 24px;
+                        align-items: center;
+                        gap: 10px;
+                        flex-shrink: 0;
+                        margin-top: 1rem;
+                        margin-bottom: 1rem;
+                        width: 85%;
+                        border-radius: 15px;
+                        background: rgba(33, 160, 160, 0.04);
+                        border-width: 0 2px 2px 2px;
+                        border-bottom: 2px solid #21a0a0;
+                        border-color: transparent transparent #21a0a0 transparent;
+                        font-family: Lexend Exa;
+                        &::placeholder{
+                            font-family: Lexend Exa;
+                        }
+                       
+                        @media (min-width: 1024px) {
+                            display: flex;
+                            width: 440px;
+                            padding: 16px 24px;
+                            align-items: center;
+                            gap: 10px;
+                            flex-shrink: 0;
+                        }
+                    }
+                }
+                .Contact-Subject {
+                    .Contact-Label-Subject {
+                        color: #100f10;
+                        font-family: Lexend Exa;
+                        font-size: 14px;
+                        font-style: normal;
+                        font-weight: 500;
+                        line-height: 175%; /* 24.5px */
+                        letter-spacing: -0.7px;
+                    }
+                    .Contact-Select-Subject {
+                        display: flex;
+                        width: 100%;
+                        padding: 16px 24px;
+                        justify-content: space-between;
+                        align-items: center;
+                        flex-shrink: 0;
+                        border-radius: 15px;
+                        background: rgba(33, 160, 160, 0.04);
+                        margin-top: 1rem;
+                        margin-bottom: 1rem;
+                        border-width: 0 2px 2px 2px;
+                        border-bottom: 2px solid #21a0a0;
+                        border-color: transparent transparent #21a0a0 transparent;
+                        color: #100f10;
+                        font-family: Lexend Exa;
+                        font-size: 12px;
+                        font-style: normal;
+                        font-weight: 400;
+                        line-height: 100%; /* 12px */
+                        letter-spacing: -0.6px;
+                        &::placeholder {
+                            font-family: Lexend Exa;
+                        }
+                
+                        @media (min-width: 1024px) {
+                            display: flex;
+                            width: 490px;
+                            padding: 16px 24px;
+                            justify-content: space-between;
+                            align-items: center;
+                            flex-shrink: 0;
+                            border-radius: 15px;
+                            border-bottom: 2px solid #21a0a0;
+                            background: rgba(33, 160, 160, 0.04);
+                        }
+
+                        option {
+                            color: #100f10;
+                            font-family: Lexend Exa;
+                            font-size: 12px;
+                            font-style: normal;
+                            font-weight: 400;
+                            line-height: 100%; /* 12px */
+                            letter-spacing: -0.6px;
+                        }
+                    }
+                }
+            }
+            .Contact-2 {
+                @media (min-width: 1024px) {
+                    margin: auto;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    margin-left: 3rem;
+                    margin-right: 1rem;
+                }
+                .Contact-Text {
+                    @media (min-width: 1024px) {
+                        margin-top: 1rem;
+                    }
+                    .Contact-Text-Label {
+                        color: #100f10;
+                        font-family: Lexend Exa;
+                        font-size: 14px;
+                        font-style: normal;
+                        font-weight: 500;
+                        line-height: 175%; /* 24.5px */
+                        letter-spacing: -0.7px;
+                        @media (min-width: 1024px) {
+                        }
+                    }
+
+                    .Contact-Text-Area {
+                        display: flex;
+                        width: 85%;
+                        height: 250px;
+                        padding: 24px;
+                        align-items: flex-start;
+                        gap: 10px;
+                        flex-shrink: 0;
+                        border-radius: 15px;
+                        background: rgba(33, 160, 160, 0.04);
+                        margin-top: 1rem;
+                        margin-bottom: 1rem;
+                        border-width: 0 2px 2px 2px;
+                        border-bottom: 2px solid #21a0a0;
+                        border-color: transparent transparent #21a0a0 transparent;
+                        font-family: Lexend Exa;
+                        @media (min-width: 1024px) {
+                            display: flex;
+                            width: 92%;
+                            height: 250px;
+                            padding: 24px;
+                            align-items: flex-start;
+                            gap: 10px;
+                            flex-shrink: 0;
+                            border-radius: 15px;
+                            border-bottom: 2px solid #21a0a0;
+                            background: rgba(33, 160, 160, 0.04);
+                        }
+                    }
+                }
+            }
+            .Contact-btn {
+                margin: auto;
+                text-align: center;
+                @media (min-width: 1024px) {
+                }
+                .Contact-Send {
+                    display: inline-flex;
+                    height: 60px;
+                    padding: 16px 24px;
+                    justify-content: center;
+                    align-items: center;
+                    flex-shrink: 0;
+                    border-radius: 18px;
+                    background: #193d78;
+                    border: transparent;
+                    color: #fff;
+                    font-family: Lexend Exa;
+                    font-size: 16px;
+                    font-style: normal;
+                    font-weight: 700;
+                    line-height: 110%; /* 17.6px */
+                    letter-spacing: -0.8px;
+                    margin-bottom: 4rem;
+                    margin-top: 53px;
+                    
+                    &:hover {
+                        background: #4a73ad;
+                        cursor: pointer;
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+/* Estilização para quando um campo tem um erro */
+.error {
+    color: red;
+    margin-bottom: 5px; 
+  }
+  .error-border {
+    border: 2px solid red; 
+  }
+  .error-message {
+    color: red; 
+    font-size: 12px;
+    margin-top: 5px; 
+    margin-bottom: 5px; 
+    font-family: Lexend Exa;
+  }
+  
+

@@ -1,0 +1,177 @@
+.possibilities-container {
+    max-width: 100%;
+    height: auto;
+    flex-shrink: 0;
+    background: #21a0a0;
+
+
+
+    .possibilitiesContainer {
+        text-align: center;
+        margin: 0rem 1rem 0rem 1rem;
+        padding-top: 4rem;
+        @media (min-width: 1024px) {
+            padding-top: 8rem;
+        }
+        .possibilitiesContainer-Title {
+            @media (min-width: 1024px) {
+                display: flex;
+                justify-content: center;
+            }
+        }
+        .possibilities-title {
+            color: #100f10;
+            text-align: center;
+            font-family: Lexend Exa;
+            font-size: 2rem;
+            font-style: normal;
+            font-weight: 700;
+            line-height: 110%; /* 35.2px */
+            letter-spacing: -1.6px;
+            margin-bottom: 2rem;
+            @media (min-width: 1024px) {
+                color: #100f10;
+                text-align: center;
+                font-family: Lexend Exa;
+                font-size: 48px;
+                font-style: normal;
+                font-weight: 700;
+                line-height: 110%; /* 52.8px */
+                letter-spacing: -2.4px;
+                width: 715px;
+            }
+            .possibilities-span {
+                color: #fff;
+                font-family: Pecita;
+                font-size: 48px;
+                font-style: normal;
+                font-weight: 400;
+                line-height: 110%;
+                @media (min-width: 1024px) {
+                    color: #fff;
+                    font-family: Pecita;
+                    font-size: 64px;
+                    font-style: normal;
+                    font-weight: 400;
+                    line-height: 110%;
+                }
+            }
+        }
+
+        .possibilitiesContainer-Text {
+            @media (min-width: 1024px) {
+                margin: auto;
+                margin-top: 2rem;
+                margin-bottom: 2rem;
+                width: 715px;
+            }
+            .possibilities-intro-paragraph {
+                color: #f0f0f0;
+                text-align: center;
+                font-family: Lexend Exa;
+                font-size: 14px;
+                font-style: normal;
+                font-weight: 400;
+                line-height: 175%; /* 24.5px */
+                letter-spacing: -0.7px;
+                margin-top: 1rem;
+            }
+            .possibilities-sub-heading {
+                color: #f0f0f0;
+                font-family: Lexend Exa;
+                font-size: 14px;
+                font-style: normal;
+                font-weight: 700;
+                line-height: 175%;
+                letter-spacing: -0.7px;
+                margin-top: 2rem;
+            }
+        }
+        .possibilities-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            margin: 4rem 1rem 1rem 1rem;
+            gap: 1rem;
+
+            @media (min-width: 1024px) {
+                grid-template-columns: repeat(4, 1fr);
+                gap: 36px;
+                width: 82%;
+                margin: auto;
+                margin-top: 4rem;
+            }
+
+            .possibilities-investment-option {
+                display: flex;
+                
+                flex-direction: column;
+                align-items: center;
+                text-align: center;
+                margin: auto;
+                margin-bottom: 1rem;
+
+                .possibilities-icon-image {
+                    display: flex;
+                    width: 80px;
+                    height: 80px;
+                    justify-content: center;
+                    align-items: center;
+                    border-radius: 40px;
+                    background: #fff;
+                    color: #21a0a0;
+                    .possibilities-icon-image-icon {
+                        width: 30.625px;
+                        height: 35px;
+                        flex-shrink: 0;
+                        fill: #21a0a0;
+                        color: #21a0a0;
+                    }
+                }
+                .possibilities-description-text {
+                    color: #f0f0f0;
+                    text-align: center;
+                    font-family: Lexend Exa;
+                    font-size: 14px;
+                    font-style: normal;
+                    font-weight: 400;
+                    line-height: 175%;
+                    letter-spacing: -0.7px;
+                    margin-top: 1rem;
+                    height: 50px;
+                    max-width: 100%;
+                    align-self: stretch;
+                }
+            }
+        }
+        .possibilities-invest-button {
+            display: inline-flex;
+            height: 50px;
+            padding: 1rem;
+            justify-content: center;
+            align-items: center;
+            flex-shrink: 0;
+            border-radius: 18px;
+            border: 2px solid #fff;
+            background-color: transparent;
+            color: #fff;
+            font-family: Lexend Exa;
+            font-size: 14px;
+            font-style: normal;
+            font-weight: 600;
+            line-height: 110%; /* 15.4px */
+            letter-spacing: -0.7px;
+            margin-bottom: 4rem;
+            margin-top: 2rem;
+            transition: all ease-in-out .3s;
+            &:hover{
+                color: #21a0a0;
+                background-color:#fff;
+                cursor: pointer;
+            }
+            @media (min-width: 1024px) {
+                margin-bottom: 8rem;
+                margin-top: 4rem;
+            }
+        }
+    }
+}

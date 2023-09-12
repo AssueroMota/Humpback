@@ -1,0 +1,9 @@
+.close {
+    font-size: 30px;
+    width: 50px; 
+    cursor: pointer;
+    position: fixed;
+    top: 32px;
+    right: 32px;
+    z-index: 2;
+}

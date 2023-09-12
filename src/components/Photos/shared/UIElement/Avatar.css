@@ -1,0 +1,12 @@
+.avatar {
+    position: fixed; 
+    transform-origin: 50% 50%;
+    transform: scale(1.5) translate(-30%,-30%);
+    top: 50%;
+    left: 48.2%;
+    z-index: 2;
+}
+
+.avatar-image {
+    cursor: pointer;
+}
